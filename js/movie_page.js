@@ -32,7 +32,7 @@ function mapMovie(data) {
     if (data.Poster != "N/A") {
         moviePoster = data.Poster;
     } else {
-        moviePoster = "/images/n_a.jpg";
+        moviePoster = "./images/n_a.jpg";
     }
     con.innerHTML = `
     <div class="movieImg">
@@ -46,7 +46,7 @@ function mapMovie(data) {
         <p><strong>Director :</strong> ${data.Director}</p>
         <p><strong>Actors :</strong> ${data.Actors}</p>
         <div id="ratings">
-            <img src=/images/download.png alt="">
+            <img src=./images/download.png alt="">
             <span> : ${data.imdbRating}</span>
         </div>
         <p><strong>Plot :</strong> ${data.Plot}</p>
