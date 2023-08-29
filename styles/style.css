@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: #ffbb00;
+}
+body {
+  background-color: black !important;
+}
+/* custom scrollbar */
+/* Define custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #323232;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffbb00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}

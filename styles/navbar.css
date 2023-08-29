@@ -1,0 +1,260 @@
+/* navbar */
+nav {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  height: 60px;
+}
+
+#brand_logo {
+  width: 60px;
+  border-radius: 5px;
+  margin: 15px auto auto 150px;
+  cursor: pointer;
+}
+#nav_menu {
+  margin: 20px 0px auto 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+#nav_menu span {
+  margin-left: 5px;
+}
+/* Search Bar */
+.search-container {
+  display: inline-block;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 14px 0px auto 20px;
+}
+/* Style for the search input */
+.search-input {
+  height: 32px;
+  padding-left: 10px;
+  border: none;
+  width: 600px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: black;
+}
+.search-input::placeholder {
+  color: rgb(109, 109, 109);
+}
+/* Style for the search button */
+.search-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 20px;
+  margin-left: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  float: right;
+}
+.search-button i {
+  color: rgb(109, 109, 109);
+}
+/* movie search list */
+.movieSearchList {
+  width: 300px;
+  height: max-content;
+  background-color: rgb(43, 43, 43);
+  position: absolute;
+  z-index: 999;
+  margin: 5px 0px 0px 20px;
+  border-radius: 5px;
+  padding: 10px;
+  height: max-content;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+.listItem {
+  display: flex;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.listItem:hover {
+  background-color: rgb(113, 113, 113);
+}
+.listItem img {
+  width: 40px;
+  margin: 0;
+  cursor: default;
+}
+.listItem div:nth-child(2) {
+  margin: 0px 0px 0px 20px;
+}
+.listItem p {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  max-width: 150px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.listItem p:hover {
+  color: #ffbb00;
+}
+.listItem span {
+  font-size: 12px;
+}
+.hideSearchList {
+  display: none;
+}
+/* fav button styles */
+
+#addToFav {
+  position: absolute;
+  right: 15px;
+  margin-top: 3px; 
+}
+#addToFav input[type="checkbox"] {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.favHeart {
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.redHeartColor {
+  color: #ffbb00;
+}
+
+/* navbar buttons */
+#imdbProIcon {
+  height: max-content;
+  padding: 0px 10px;
+  border-radius: 3px;
+  margin: 14px 0px auto 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+#imdbProIcon:hover {
+  background-color: rgb(75, 75, 75);
+}
+#imdbProIcon h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin-top: 5px;
+}
+#imdbProIcon_Pro {
+  font-family: poppins;
+  color: rgb(55, 192, 255);
+  letter-spacing: 0px;
+}
+nav span:nth-child(5) {
+  width: 1.5px;
+  height: 30px;
+  margin: 15px 0px auto 20px;
+  background-color: rgb(88, 88, 88);
+}
+
+#watchList,
+nav span:nth-child(7) {
+  display: flex;
+  height: max-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 13px 0px auto 20px;
+  cursor: pointer;
+}
+#watchList{
+  border-radius: 5px 5px 0px 0px;
+}
+#watchList:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+#watchList img {
+  width: 15px;
+  margin: 0px;
+  border-radius: 0px;
+  height: 20px;
+}
+#watchList span {
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.favList{
+  position: absolute;
+  margin: 27px 0px 0px -10px;
+  background-color: rgb(75, 75, 75);
+  padding: 30px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+  z-index: 1001;
+  width: 350px;
+}
+.favListItem{
+  padding: 5px;
+  margin-bottom: 10px;
+  transition: .2s ease-in-out;
+  cursor: default;
+  border-radius: 5px;
+}
+.favListItem:hover{
+  background-color: #5f5f5f;
+}
+.favListItem span {
+ font-size: 12px !important;
+ font-weight: 400 !important;
+ cursor: pointer;
+}
+.favListItem span:hover{
+  color: #ffbb00;
+}
+.favListItem button {
+  background-color: #ffbb00;
+  font-size: 13px;
+  position: absolute;
+  right: 15px;
+  margin-top: 2px;
+  color: black;
+  border-radius: 10px;
+  padding: 1px 10px;
+  border: none;
+  margin-left: 10px;
+  transition: .2s ease-in-out;
+}
+.favListItem button:hover{
+  background-color: white;
+}
+
+#watchList:hover .favList  {
+  display: initial;
+}
+nav span:nth-child(7) {
+  font-size: 15px;
+  font-weight: 600;
+}
+nav span:nth-child(7):hover {
+  background-color: rgb(75, 75, 75);
+}
+
+@media screen and (max-width: 1300px) {
+  #brand_logo {
+    margin-left: 70px;
+  }
+  .search-input {
+    width: 400px;
+  }
+}

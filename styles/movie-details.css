@@ -1,0 +1,47 @@
+/* <div class="con">
+<div class="movieImg">
+    <img src="https://m.media-amazon.com/images/M/MV5BMjE5MzcyNjk1M15BMl5BanBnXkFtZTcwMjQ4MjcxOQ@@._V1_SX300.jpg" alt="">
+</div>
+<div>
+    <h1>Iron Man 3</h1>
+    <h3>2013</h3>
+    <p><strong>Catagory:</strong>Movie</p>
+    <p><strong>IMDb ID:</strong>12345</p>
+</div>
+</div> */
+
+.con{
+    display: flex;
+    width: 95%;
+    max-width: 1000px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 100px auto auto auto;
+    flex-wrap: wrap;
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+}
+.con div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.con div:nth-child(2) h2{
+    margin-top: 10px;
+}
+.con div:nth-child(2) p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+    max-width: 600px;
+    color: rgb(211, 211, 211);
+}
+#ratings{
+    display: flex;
+    margin-top: 10px;
+}
+#ratings img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
