@@ -6,7 +6,7 @@ const feedContainer = document.getElementById('main');
 if (imdbId) {
     getMovie();
 } else {
-    window.location.href = "https://www.example.com";
+    window.location.href = "https://shikhargupta209.github.io/imdb-clone.github.io/404.html";
 }
 async function getMovie() {
     try {
@@ -16,11 +16,11 @@ async function getMovie() {
         if (data.Response == "True") {
             mapMovie(data);
         } else {
-            window.location.href = "https://www.example.com";
+            window.location.href = "https://shikhargupta209.github.io/imdb-clone.github.io/404.html";
         }
     } catch (error) {
         console.log(error);
-        window.location.href = "https://www.example.com";
+        window.location.href = "https://shikhargupta209.github.io/imdb-clone.github.io/404.html";
     }
 }
 

@@ -79,7 +79,7 @@ async function ListMovie(data) {
       </div>
       <div>
         <input class="searchListMovieId" type="hidden" value=${data[i].imdbID}>
-        <p><a href="http://127.0.0.1:5500/movie-page.html?=${data[i].imdbID}">${data[i].Title}</a></p>
+        <p><a href="https://shikhargupta209.github.io/imdb-clone.github.io/movie-page.html?=${data[i].imdbID}">${data[i].Title}</a></p>
         <span>${data[i].Year}</span>
       </div>
       <div id="addToFav" class="addToFav">
@@ -119,7 +119,7 @@ function updateFavList() {
       var favListItem = document.createElement("div");
       favListItem.classList.add("favListItem");
       favListItem.innerHTML = `
-        <span><a href="movie-page.html?=${item.IMDbId}">${item.movieName}</a></span>
+        <span><a href="https://shikhargupta209.github.io/imdb-clone.github.io/movie-page.html?=${item.IMDbId}">${item.movieName}</a></span>
         <button class="removeFavMovieButton">Remove</button>
         <input type="hidden" value=${item.IMDbId}>
     `;
