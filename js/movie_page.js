@@ -52,7 +52,7 @@ function mapMovie(data) {
         <p><strong>Plot :</strong> ${data.Plot}</p>
     </div>
     `;
-    feedContainer.appendChild(con);
+    feedContainer.appendChild(con)
 
 }
 

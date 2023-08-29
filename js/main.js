@@ -170,4 +170,4 @@ movieSearchList.addEventListener("click", (e) => {
     udateLocals(favMovieList);
     updateFavList();
   }
-});
+})
